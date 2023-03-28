@@ -61,3 +61,4 @@ class LoginFormAuthenticator extends AbstractLoginFormAuthenticator
 
 // app_forgot_password_request
 
+
