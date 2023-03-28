@@ -15,19 +15,21 @@
         {% endblock %}
     </head>
     <body>
-        
+        {% block body %}
 
         <header>
 
         </header>
 
         <main>
-        {% block main %}{% endblock %}
+        
         </main>
 
         <footer>
 
         </footer>
+        
+        {% endblock %}
 
         <script src="{{ asset('js/index.js') }}"></script>
     </body>
