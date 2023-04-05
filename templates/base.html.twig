@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="           
         crossorigin="anonymous" referrerpolicy="no-referrer" />                                                                      <!--voir libairie line-awesone = fontawesone-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
  
 
 
@@ -26,14 +27,15 @@
 </head>
 
 <body>
+  
 
     <header>
-
+  <div class="container-fluid">  
         <nav>
             <div id="navbar">
                 <ul>
                     <li>
-                        <div class="logo"><a href="index.html"><img src="{{ asset('media/logo.png') }}" alt="logo"></a>
+                        <div class="logo"><a href="{{ path('app_home') }}"><img src="{{ asset('media/logo.png') }}" alt="logo"></a>
                         </div>
                     </li>
                     <li>
@@ -52,15 +54,22 @@
                     </li>
                     <li>
                         <div class="login">
-                            <a href="#">
-                                <p>se connecter</p><i class="fa-solid fa-user"></i>
+                            <a href="{{ path('app_login') }}">
+                            <ul>
+                                <li>compte</li>
+                                <li><i class="fa-solid fa-user"></i></li>
+                            </ul>
                             </a>
                         </div>
                     </li>
                     <li>
                         <div class="panier"><a href="#">
-                                <p>recrutement</p> <i class="fa-solid fa-basket-shopping"></i>
-                            </a></div>
+                            <ul>
+                                <li> panier</li>
+                                <li><i class="fa-solid fa-basket-shopping"></i></li>
+                            </ul>
+                            </a>
+                        </div>
                     </li>
                 </ul>
 
@@ -79,11 +88,11 @@
                                     class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </li>
-                    <li><a class="dropdown-item" href="./pageRecruteurOffreCandidatHtml/pageRecuteur.html"
+                    <li><a class="dropdown-item" href="{{ path('app_formule_recruteur_index') }}"
                             target="_blank">recruteur</a></li>
-                    <li><a class="dropdown-item" href="./pageRecruteurOffreCandidatHtml/pageCandidat.html"
+                    <li><a class="dropdown-item" href="#"
                             target="_blank">candidat</a></li>
-                    <li><a class="dropdown-item" href="./pageRecruteurOffreCandidatHtml/pageOffreEmploi.html"
+                    <li><a class="dropdown-item" href="#"
                             target="_blank">offre d'emploi</a></li>
                 </ul>
             </div>
@@ -92,14 +101,14 @@
                 <div class="menuLiens">
                     <ul>
                         <li>
-                            <a href="./pageRecruteurOffreCandidatHtml/pageRecuteur.html" target="_blank">recruteur</a>
+                            <a href="{{ path('app_formule_recruteur_index') }}" target="_blank">recruteur</a>
                         </li>
                         <li>
-                            <a href="./pageRecruteurOffreCandidatHtml/pageOffreEmploi.html" target="_blank">offre
+                            <a href="#" target="_blank">offre
                                 d'emploi</a>
                         </li>
                         <li>
-                            <a href="./pageRecruteurOffreCandidatHtml/pageCandidat.html" target="_blank">candidat</a>
+                            <a href="#" target="_blank">candidat</a>
                         </li>
                     </ul>
                 </div>
@@ -119,7 +128,7 @@
         {% endblock %}
     </main>
     <footer>
-        <p><a href="./footer/nousContacter.html" target="_blank">nous contacter</a> </p>
+        <p><a href="" target="_blank">nous contacter</a> </p>
 
 
         <div id="reseaux">
@@ -133,6 +142,11 @@
         </div>
 
     </footer>
+
+
+
+
+</div>
 
 
 

@@ -31,21 +31,11 @@ header a {
 
 
 .logo img {
-    width: 10rem;
+    width: 8rem;
 
 }
 
 .barreMenu {
-    display: none;
-}
-
-.login a i {
-    color: rgb(255, 253, 253);
-    display: none;
-}
-
-.panier a i {
-    color: white;
     display: none;
 }
 
@@ -116,7 +106,7 @@ footer i {
 
 
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 950px) {                                     /*media queries*/
 
     .menu {
         margin: 0;
@@ -131,19 +121,12 @@ footer i {
         display: none;
     }
 
-    .logo img {
-        width: 10rem;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-
-    }
 
     .barre {
         display: none;
     }
 
-    .login p {
+    .login li:first-child  {                                /*efface le premier li "compte*/
         display: none;
     }
 
@@ -152,13 +135,8 @@ footer i {
         display: flex;
     }
 
-    .panier p {
+    .panier li:first-child  {
         display: none;
-    }
-
-    .panier a i {
-        color: rgb(255, 255, 255);
-        display: flex;
     }
 
 
