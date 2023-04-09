@@ -34,3 +34,67 @@
     
 // }
 // precedent.addEventListener('click', slidePrecedente)
+
+const conteneurMenu = document.querySelector('#conteneur-menu');
+const btnMenu = document.querySelector('#bouton-menu');
+const btnFlottant = document.querySelectorAll('.boule');
+const texte = document.querySelector('.selectionEspace');
+// retourCouleur = document.querySelector('#container-menu');
+// boutonretour = document.querySelector('#btn-menu');
+console.dir(btnFlottant.length);
+
+
+
+
+
+
+btnMenu.addEventListener('click', () => {
+
+    conteneurMenu.classList.toggle('active');
+
+    if ( conteneurMenu.style.backgroundColor=='transparent') {
+        conteneurMenu.style.backgroundColor='orange' ;
+    } 
+    
+    else {
+        conteneurMenu.style.backgroundColor='transparent';
+    }
+
+    // if (btnMenu.style.width == '100px' && btnMenu.style.height == '100px') {
+    //     btnMenu.classList.add('.disparition');
+    //     texte.style.display = 'none'
+
+    // } 
+    
+    // // else {
+       
+    // // }
+
+     
+  });
+
+
+// btnMenu.addEventListener('click', () => {
+
+//     containerMenu.classList.toggle('active');
+
+//     if ( containerMenu.style.transform=='scale(1)') {
+//         containerMenu.style.transform='scale(0)' ;
+//     } 
+    
+//     else {
+//         containerMenu.style.style.transform ='scale(1)';
+//     }
+
+     
+//   });
+  
+
+
+  
+
+
+    
+//     btnFlottant.forEach((e) => {
+//         e.classList.add('sous-bouton');    
+//     })
