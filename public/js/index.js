@@ -53,7 +53,7 @@ btnMenu.addEventListener('click', () => {
     conteneurMenu.classList.toggle('active');
 
     if ( conteneurMenu.style.backgroundColor=='transparent') {
-        conteneurMenu.style.backgroundColor='orange' ;
+        conteneurMenu.style.backgroundColor='white' ;
     } 
     
     else {
